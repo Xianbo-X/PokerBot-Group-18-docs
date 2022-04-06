@@ -1,0 +1,234 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter {\sphinxsymbolsname}
+  \item \spxentry{\_available\_actions}\spxextra{client.state.ClientGameRoundState attribute}, 
+		\hyperpage{14}
+  \item \spxentry{\_card}\spxextra{client.state.ClientGameRoundState attribute}, \hyperpage{14}
+  \item \spxentry{\_card\_image}\spxextra{client.state.ClientGameRoundState attribute}, 
+		\hyperpage{14}
+  \item \spxentry{\_cards}\spxextra{client.state.ClientGameRoundState attribute}, \hyperpage{14}
+  \item \spxentry{\_coordinator\_id}\spxextra{client.state.ClientGameRoundState attribute}, 
+		\hyperpage{13}
+  \item \spxentry{\_coordinator\_id}\spxextra{client.state.ClientGameState attribute}, 
+		\hyperpage{15}
+  \item \spxentry{\_moves\_history}\spxextra{client.state.ClientGameRoundState attribute}, 
+		\hyperpage{14}
+  \item \spxentry{\_outcome}\spxextra{client.state.ClientGameRoundState attribute}, \hyperpage{14}
+  \item \spxentry{\_player\_bank}\spxextra{client.state.ClientGameState attribute}, \hyperpage{15}
+  \item \spxentry{\_player\_token}\spxextra{client.state.ClientGameState attribute}, \hyperpage{15}
+  \item \spxentry{\_round\_id}\spxextra{client.state.ClientGameRoundState attribute}, 
+		\hyperpage{13}
+  \item \spxentry{\_rounds}\spxextra{client.state.ClientGameState attribute}, \hyperpage{15}
+  \item \spxentry{\_turn\_order}\spxextra{client.state.ClientGameRoundState attribute}, 
+		\hyperpage{14}
+
+  \indexspace
+  \bigletter A
+  \item \spxentry{add\_move\_history()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{14}
+  \item \spxentry{agent}
+    \subitem \spxentry{module}, \hyperpage{3}
+
+  \indexspace
+  \bigletter C
+  \item \spxentry{card3strategy()}\spxextra{strategy.agent\_strategy.PokerStrategy method}, 
+		\hyperpage{9}
+  \item \spxentry{card4strategy()}\spxextra{strategy.agent\_strategy.PokerStrategy method}, 
+		\hyperpage{9}
+  \item \spxentry{client}
+    \subitem \spxentry{module}, \hyperpage{16}
+  \item \spxentry{client.events}
+    \subitem \spxentry{module}, \hyperpage{13}
+  \item \spxentry{client.state}
+    \subitem \spxentry{module}, \hyperpage{13}
+  \item \spxentry{ClientGameRoundState}\spxextra{class in client.state}, \hyperpage{13}
+  \item \spxentry{ClientGameState}\spxextra{class in client.state}, \hyperpage{15}
+  \item \spxentry{ClientRequestEventsIterator}\spxextra{class in client.events}, \hyperpage{13}
+  \item \spxentry{close()}\spxextra{client.events.ClientRequestEventsIterator method}, 
+		\hyperpage{13}
+
+  \indexspace
+  \bigletter D
+  \item \spxentry{data\_sets}
+    \subitem \spxentry{module}, \hyperpage{11}
+
+  \indexspace
+  \bigletter E
+  \item \spxentry{extract\_features()}\spxextra{in module data\_sets}, \hyperpage{11}
+
+  \indexspace
+  \bigletter F
+  \item \spxentry{forward()}\spxextra{models.base\_model.PokerModelBase method}, \hyperpage{7}
+  \item \spxentry{forward()}\spxextra{models.CNN3.model method}, \hyperpage{5}
+  \item \spxentry{forward()}\spxextra{models.CNN4.model method}, \hyperpage{6}
+  \item \spxentry{forward()}\spxextra{models.FCN3.model method}, \hyperpage{6}
+  \item \spxentry{forward()}\spxextra{models.FCN4.model method}, \hyperpage{7}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{generate\_data\_set()}\spxextra{in module data\_sets}, \hyperpage{11}
+  \item \spxentry{generate\_noisy\_image()}\spxextra{in module data\_sets}, \hyperpage{12}
+  \item \spxentry{get\_available\_actions()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{14}
+  \item \spxentry{get\_card()}\spxextra{client.state.ClientGameRoundState method}, \hyperpage{14}
+  \item \spxentry{get\_card\_image()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{14}
+  \item \spxentry{get\_cards()}\spxextra{client.state.ClientGameRoundState method}, \hyperpage{14}
+  \item \spxentry{get\_coordinator\_id()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{14}
+  \item \spxentry{get\_coordinator\_id()}\spxextra{client.state.ClientGameState method}, 
+		\hyperpage{15}
+  \item \spxentry{get\_last\_round\_state()}\spxextra{client.state.ClientGameState method}, 
+		\hyperpage{15}
+  \item \spxentry{get\_moves\_history()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{14}
+  \item \spxentry{get\_outcome()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{14}
+  \item \spxentry{get\_player\_bank()}\spxextra{client.state.ClientGameState method}, 
+		\hyperpage{15}
+  \item \spxentry{get\_player\_token()}\spxextra{client.state.ClientGameState method}, 
+		\hyperpage{15}
+  \item \spxentry{get\_round\_id()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{14}
+  \item \spxentry{get\_rounds()}\spxextra{client.state.ClientGameState method}, \hyperpage{15}
+  \item \spxentry{get\_strategy()}\spxextra{strategy.agent\_strategy.PokerStrategy method}, 
+		\hyperpage{10}
+  \item \spxentry{get\_strategy()}\spxextra{strategy.base\_strategy.StrategyBase method}, 
+		\hyperpage{10}
+  \item \spxentry{get\_turn\_order()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{15}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{is\_closed()}\spxextra{client.events.ClientRequestEventsIterator method}, 
+		\hyperpage{13}
+  \item \spxentry{is\_ended()}\spxextra{client.state.ClientGameRoundState method}, \hyperpage{15}
+
+  \indexspace
+  \bigletter L
+  \item \spxentry{load\_data\_set()}\spxextra{in module data\_sets}, \hyperpage{12}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{make\_action()}\spxextra{agent.PokerAgent method}, \hyperpage{3}
+  \item \spxentry{make\_request()}\spxextra{client.events.ClientRequestEventsIterator method}, 
+		\hyperpage{13}
+  \item \spxentry{model}\spxextra{class in models.CNN3}, \hyperpage{5}
+  \item \spxentry{model}\spxextra{class in models.CNN4}, \hyperpage{6}
+  \item \spxentry{model}\spxextra{class in models.FCN3}, \hyperpage{6}
+  \item \spxentry{model}\spxextra{class in models.FCN4}, \hyperpage{7}
+  \item \spxentry{models}
+    \subitem \spxentry{module}, \hyperpage{8}
+  \item \spxentry{models.base\_model}
+    \subitem \spxentry{module}, \hyperpage{7}
+  \item \spxentry{models.CNN3}
+    \subitem \spxentry{module}, \hyperpage{5}
+  \item \spxentry{models.CNN4}
+    \subitem \spxentry{module}, \hyperpage{6}
+  \item \spxentry{models.FCN3}
+    \subitem \spxentry{module}, \hyperpage{6}
+  \item \spxentry{models.FCN4}
+    \subitem \spxentry{module}, \hyperpage{7}
+  \item \spxentry{module}
+    \subitem \spxentry{agent}, \hyperpage{3}
+    \subitem \spxentry{client}, \hyperpage{16}
+    \subitem \spxentry{client.events}, \hyperpage{13}
+    \subitem \spxentry{client.state}, \hyperpage{13}
+    \subitem \spxentry{data\_sets}, \hyperpage{11}
+    \subitem \spxentry{models}, \hyperpage{8}
+    \subitem \spxentry{models.base\_model}, \hyperpage{7}
+    \subitem \spxentry{models.CNN3}, \hyperpage{5}
+    \subitem \spxentry{models.CNN4}, \hyperpage{6}
+    \subitem \spxentry{models.FCN3}, \hyperpage{6}
+    \subitem \spxentry{models.FCN4}, \hyperpage{7}
+    \subitem \spxentry{strategy}, \hyperpage{10}
+    \subitem \spxentry{strategy.agent\_strategy}, \hyperpage{9}
+    \subitem \spxentry{strategy.base\_strategy}, \hyperpage{10}
+
+  \indexspace
+  \bigletter N
+  \item \spxentry{next()}\spxextra{client.events.ClientRequestEventsIterator method}, 
+		\hyperpage{13}
+
+  \indexspace
+  \bigletter O
+  \item \spxentry{on\_error()}\spxextra{agent.PokerAgent method}, \hyperpage{3}
+  \item \spxentry{on\_game\_end()}\spxextra{agent.PokerAgent method}, \hyperpage{3}
+  \item \spxentry{on\_game\_start()}\spxextra{agent.PokerAgent method}, \hyperpage{3}
+  \item \spxentry{on\_image()}\spxextra{agent.PokerAgent method}, \hyperpage{4}
+  \item \spxentry{on\_new\_round\_request()}\spxextra{agent.PokerAgent method}, \hyperpage{4}
+  \item \spxentry{on\_round\_end()}\spxextra{agent.PokerAgent method}, \hyperpage{4}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{PokerAgent}\spxextra{class in agent}, \hyperpage{3}
+  \item \spxentry{PokerModelBase}\spxextra{class in models.base\_model}, \hyperpage{7}
+  \item \spxentry{PokerStrategy}\spxextra{class in strategy.agent\_strategy}, \hyperpage{9}
+  \item \spxentry{predict()}\spxextra{models.base\_model.PokerModelBase method}, \hyperpage{7}
+  \item \spxentry{predict()}\spxextra{models.CNN3.model method}, \hyperpage{5}
+  \item \spxentry{predict()}\spxextra{models.CNN4.model method}, \hyperpage{6}
+  \item \spxentry{predict()}\spxextra{models.FCN3.model method}, \hyperpage{6}
+  \item \spxentry{predict()}\spxextra{models.FCN4.model method}, \hyperpage{7}
+  \item \spxentry{prob()}\spxextra{models.base\_model.PokerModelBase method}, \hyperpage{8}
+  \item \spxentry{prob()}\spxextra{models.CNN3.model method}, \hyperpage{5}
+  \item \spxentry{prob()}\spxextra{models.CNN4.model method}, \hyperpage{6}
+  \item \spxentry{prob()}\spxextra{models.FCN3.model method}, \hyperpage{6}
+  \item \spxentry{prob()}\spxextra{models.FCN4.model method}, \hyperpage{7}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{set\_available\_actions()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{15}
+  \item \spxentry{set\_avaliable\_actions()}\spxextra{strategy.base\_strategy.StrategyBase method}, 
+		\hyperpage{10}
+  \item \spxentry{set\_bank()}\spxextra{strategy.base\_strategy.StrategyBase method}, 
+		\hyperpage{10}
+  \item \spxentry{set\_card()}\spxextra{client.state.ClientGameRoundState method}, \hyperpage{15}
+  \item \spxentry{set\_card\_image()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{15}
+  \item \spxentry{set\_cards()}\spxextra{client.state.ClientGameRoundState method}, \hyperpage{15}
+  \item \spxentry{set\_current\_card()}\spxextra{strategy.base\_strategy.StrategyBase method}, 
+		\hyperpage{10}
+  \item \spxentry{set\_gametype()}\spxextra{strategy.base\_strategy.StrategyBase method}, 
+		\hyperpage{10}
+  \item \spxentry{set\_initial\_request()}\spxextra{client.events.ClientRequestEventsIterator method}, 
+		\hyperpage{13}
+  \item \spxentry{set\_move\_history()}\spxextra{strategy.base\_strategy.StrategyBase method}, 
+		\hyperpage{10}
+  \item \spxentry{set\_moves\_history()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{15}
+  \item \spxentry{set\_order()}\spxextra{strategy.base\_strategy.StrategyBase method}, 
+		\hyperpage{10}
+  \item \spxentry{set\_outcome()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{15}
+  \item \spxentry{set\_roll\_the\_dice()}\spxextra{strategy.base\_strategy.StrategyBase method}, 
+		\hyperpage{10}
+  \item \spxentry{set\_turn\_order()}\spxextra{client.state.ClientGameRoundState method}, 
+		\hyperpage{15}
+  \item \spxentry{start\_new\_round()}\spxextra{client.state.ClientGameState method}, 
+		\hyperpage{15}
+  \item \spxentry{strategy}
+    \subitem \spxentry{module}, \hyperpage{10}
+  \item \spxentry{strategy.agent\_strategy}
+    \subitem \spxentry{module}, \hyperpage{9}
+  \item \spxentry{strategy.base\_strategy}
+    \subitem \spxentry{module}, \hyperpage{10}
+  \item \spxentry{StrategyBase}\spxextra{class in strategy.base\_strategy}, \hyperpage{10}
+
+  \indexspace
+  \bigletter T
+  \item \spxentry{training}\spxextra{models.base\_model.PokerModelBase attribute}, \hyperpage{8}
+  \item \spxentry{training}\spxextra{models.CNN3.model attribute}, \hyperpage{5}
+  \item \spxentry{training}\spxextra{models.CNN4.model attribute}, \hyperpage{6}
+  \item \spxentry{training}\spxextra{models.FCN3.model attribute}, \hyperpage{7}
+  \item \spxentry{training}\spxextra{models.FCN4.model attribute}, \hyperpage{7}
+
+  \indexspace
+  \bigletter U
+  \item \spxentry{update\_bank()}\spxextra{client.state.ClientGameState method}, \hyperpage{15}
+
+\end{sphinxtheindex}

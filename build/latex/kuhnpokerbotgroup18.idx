@@ -1,0 +1,124 @@
+\indexentry{module@\spxentry{module}!agent@\spxentry{agent}|hyperpage}{3}
+\indexentry{agent@\spxentry{agent}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{PokerAgent (class in agent)@\spxentry{PokerAgent}\spxextra{class in agent}|hyperpage}{3}
+\indexentry{make\_action() (agent.PokerAgent method)@\spxentry{make\_action()}\spxextra{agent.PokerAgent method}|hyperpage}{3}
+\indexentry{on\_error() (agent.PokerAgent method)@\spxentry{on\_error()}\spxextra{agent.PokerAgent method}|hyperpage}{3}
+\indexentry{on\_game\_end() (agent.PokerAgent method)@\spxentry{on\_game\_end()}\spxextra{agent.PokerAgent method}|hyperpage}{3}
+\indexentry{on\_game\_start() (agent.PokerAgent method)@\spxentry{on\_game\_start()}\spxextra{agent.PokerAgent method}|hyperpage}{3}
+\indexentry{on\_image() (agent.PokerAgent method)@\spxentry{on\_image()}\spxextra{agent.PokerAgent method}|hyperpage}{4}
+\indexentry{on\_new\_round\_request() (agent.PokerAgent method)@\spxentry{on\_new\_round\_request()}\spxextra{agent.PokerAgent method}|hyperpage}{4}
+\indexentry{on\_round\_end() (agent.PokerAgent method)@\spxentry{on\_round\_end()}\spxextra{agent.PokerAgent method}|hyperpage}{4}
+\indexentry{module@\spxentry{module}!models.CNN3@\spxentry{models.CNN3}|hyperpage}{5}
+\indexentry{models.CNN3@\spxentry{models.CNN3}!module@\spxentry{module}|hyperpage}{5}
+\indexentry{model (class in models.CNN3)@\spxentry{model}\spxextra{class in models.CNN3}|hyperpage}{5}
+\indexentry{forward() (models.CNN3.model method)@\spxentry{forward()}\spxextra{models.CNN3.model method}|hyperpage}{5}
+\indexentry{predict() (models.CNN3.model method)@\spxentry{predict()}\spxextra{models.CNN3.model method}|hyperpage}{5}
+\indexentry{prob() (models.CNN3.model method)@\spxentry{prob()}\spxextra{models.CNN3.model method}|hyperpage}{5}
+\indexentry{training (models.CNN3.model attribute)@\spxentry{training}\spxextra{models.CNN3.model attribute}|hyperpage}{5}
+\indexentry{module@\spxentry{module}!models.CNN4@\spxentry{models.CNN4}|hyperpage}{6}
+\indexentry{models.CNN4@\spxentry{models.CNN4}!module@\spxentry{module}|hyperpage}{6}
+\indexentry{model (class in models.CNN4)@\spxentry{model}\spxextra{class in models.CNN4}|hyperpage}{6}
+\indexentry{forward() (models.CNN4.model method)@\spxentry{forward()}\spxextra{models.CNN4.model method}|hyperpage}{6}
+\indexentry{predict() (models.CNN4.model method)@\spxentry{predict()}\spxextra{models.CNN4.model method}|hyperpage}{6}
+\indexentry{prob() (models.CNN4.model method)@\spxentry{prob()}\spxextra{models.CNN4.model method}|hyperpage}{6}
+\indexentry{training (models.CNN4.model attribute)@\spxentry{training}\spxextra{models.CNN4.model attribute}|hyperpage}{6}
+\indexentry{module@\spxentry{module}!models.FCN3@\spxentry{models.FCN3}|hyperpage}{6}
+\indexentry{models.FCN3@\spxentry{models.FCN3}!module@\spxentry{module}|hyperpage}{6}
+\indexentry{model (class in models.FCN3)@\spxentry{model}\spxextra{class in models.FCN3}|hyperpage}{6}
+\indexentry{forward() (models.FCN3.model method)@\spxentry{forward()}\spxextra{models.FCN3.model method}|hyperpage}{6}
+\indexentry{predict() (models.FCN3.model method)@\spxentry{predict()}\spxextra{models.FCN3.model method}|hyperpage}{6}
+\indexentry{prob() (models.FCN3.model method)@\spxentry{prob()}\spxextra{models.FCN3.model method}|hyperpage}{6}
+\indexentry{training (models.FCN3.model attribute)@\spxentry{training}\spxextra{models.FCN3.model attribute}|hyperpage}{7}
+\indexentry{module@\spxentry{module}!models.FCN4@\spxentry{models.FCN4}|hyperpage}{7}
+\indexentry{models.FCN4@\spxentry{models.FCN4}!module@\spxentry{module}|hyperpage}{7}
+\indexentry{model (class in models.FCN4)@\spxentry{model}\spxextra{class in models.FCN4}|hyperpage}{7}
+\indexentry{forward() (models.FCN4.model method)@\spxentry{forward()}\spxextra{models.FCN4.model method}|hyperpage}{7}
+\indexentry{predict() (models.FCN4.model method)@\spxentry{predict()}\spxextra{models.FCN4.model method}|hyperpage}{7}
+\indexentry{prob() (models.FCN4.model method)@\spxentry{prob()}\spxextra{models.FCN4.model method}|hyperpage}{7}
+\indexentry{training (models.FCN4.model attribute)@\spxentry{training}\spxextra{models.FCN4.model attribute}|hyperpage}{7}
+\indexentry{module@\spxentry{module}!models.base\_model@\spxentry{models.base\_model}|hyperpage}{7}
+\indexentry{models.base\_model@\spxentry{models.base\_model}!module@\spxentry{module}|hyperpage}{7}
+\indexentry{PokerModelBase (class in models.base\_model)@\spxentry{PokerModelBase}\spxextra{class in models.base\_model}|hyperpage}{7}
+\indexentry{forward() (models.base\_model.PokerModelBase method)@\spxentry{forward()}\spxextra{models.base\_model.PokerModelBase method}|hyperpage}{7}
+\indexentry{predict() (models.base\_model.PokerModelBase method)@\spxentry{predict()}\spxextra{models.base\_model.PokerModelBase method}|hyperpage}{7}
+\indexentry{prob() (models.base\_model.PokerModelBase method)@\spxentry{prob()}\spxextra{models.base\_model.PokerModelBase method}|hyperpage}{8}
+\indexentry{training (models.base\_model.PokerModelBase attribute)@\spxentry{training}\spxextra{models.base\_model.PokerModelBase attribute}|hyperpage}{8}
+\indexentry{module@\spxentry{module}!models@\spxentry{models}|hyperpage}{8}
+\indexentry{models@\spxentry{models}!module@\spxentry{module}|hyperpage}{8}
+\indexentry{module@\spxentry{module}!strategy.agent\_strategy@\spxentry{strategy.agent\_strategy}|hyperpage}{9}
+\indexentry{strategy.agent\_strategy@\spxentry{strategy.agent\_strategy}!module@\spxentry{module}|hyperpage}{9}
+\indexentry{PokerStrategy (class in strategy.agent\_strategy)@\spxentry{PokerStrategy}\spxextra{class in strategy.agent\_strategy}|hyperpage}{9}
+\indexentry{card3strategy() (strategy.agent\_strategy.PokerStrategy method)@\spxentry{card3strategy()}\spxextra{strategy.agent\_strategy.PokerStrategy method}|hyperpage}{9}
+\indexentry{card4strategy() (strategy.agent\_strategy.PokerStrategy method)@\spxentry{card4strategy()}\spxextra{strategy.agent\_strategy.PokerStrategy method}|hyperpage}{9}
+\indexentry{get\_strategy() (strategy.agent\_strategy.PokerStrategy method)@\spxentry{get\_strategy()}\spxextra{strategy.agent\_strategy.PokerStrategy method}|hyperpage}{10}
+\indexentry{module@\spxentry{module}!strategy.base\_strategy@\spxentry{strategy.base\_strategy}|hyperpage}{10}
+\indexentry{strategy.base\_strategy@\spxentry{strategy.base\_strategy}!module@\spxentry{module}|hyperpage}{10}
+\indexentry{StrategyBase (class in strategy.base\_strategy)@\spxentry{StrategyBase}\spxextra{class in strategy.base\_strategy}|hyperpage}{10}
+\indexentry{get\_strategy() (strategy.base\_strategy.StrategyBase method)@\spxentry{get\_strategy()}\spxextra{strategy.base\_strategy.StrategyBase method}|hyperpage}{10}
+\indexentry{set\_avaliable\_actions() (strategy.base\_strategy.StrategyBase method)@\spxentry{set\_avaliable\_actions()}\spxextra{strategy.base\_strategy.StrategyBase method}|hyperpage}{10}
+\indexentry{set\_bank() (strategy.base\_strategy.StrategyBase method)@\spxentry{set\_bank()}\spxextra{strategy.base\_strategy.StrategyBase method}|hyperpage}{10}
+\indexentry{set\_current\_card() (strategy.base\_strategy.StrategyBase method)@\spxentry{set\_current\_card()}\spxextra{strategy.base\_strategy.StrategyBase method}|hyperpage}{10}
+\indexentry{set\_gametype() (strategy.base\_strategy.StrategyBase method)@\spxentry{set\_gametype()}\spxextra{strategy.base\_strategy.StrategyBase method}|hyperpage}{10}
+\indexentry{set\_move\_history() (strategy.base\_strategy.StrategyBase method)@\spxentry{set\_move\_history()}\spxextra{strategy.base\_strategy.StrategyBase method}|hyperpage}{10}
+\indexentry{set\_order() (strategy.base\_strategy.StrategyBase method)@\spxentry{set\_order()}\spxextra{strategy.base\_strategy.StrategyBase method}|hyperpage}{10}
+\indexentry{set\_roll\_the\_dice() (strategy.base\_strategy.StrategyBase method)@\spxentry{set\_roll\_the\_dice()}\spxextra{strategy.base\_strategy.StrategyBase method}|hyperpage}{10}
+\indexentry{module@\spxentry{module}!strategy@\spxentry{strategy}|hyperpage}{10}
+\indexentry{strategy@\spxentry{strategy}!module@\spxentry{module}|hyperpage}{10}
+\indexentry{module@\spxentry{module}!data\_sets@\spxentry{data\_sets}|hyperpage}{11}
+\indexentry{data\_sets@\spxentry{data\_sets}!module@\spxentry{module}|hyperpage}{11}
+\indexentry{extract\_features() (in module data\_sets)@\spxentry{extract\_features()}\spxextra{in module data\_sets}|hyperpage}{11}
+\indexentry{generate\_data\_set() (in module data\_sets)@\spxentry{generate\_data\_set()}\spxextra{in module data\_sets}|hyperpage}{11}
+\indexentry{generate\_noisy\_image() (in module data\_sets)@\spxentry{generate\_noisy\_image()}\spxextra{in module data\_sets}|hyperpage}{12}
+\indexentry{load\_data\_set() (in module data\_sets)@\spxentry{load\_data\_set()}\spxextra{in module data\_sets}|hyperpage}{12}
+\indexentry{module@\spxentry{module}!client.events@\spxentry{client.events}|hyperpage}{13}
+\indexentry{client.events@\spxentry{client.events}!module@\spxentry{module}|hyperpage}{13}
+\indexentry{ClientRequestEventsIterator (class in client.events)@\spxentry{ClientRequestEventsIterator}\spxextra{class in client.events}|hyperpage}{13}
+\indexentry{close() (client.events.ClientRequestEventsIterator method)@\spxentry{close()}\spxextra{client.events.ClientRequestEventsIterator method}|hyperpage}{13}
+\indexentry{is\_closed() (client.events.ClientRequestEventsIterator method)@\spxentry{is\_closed()}\spxextra{client.events.ClientRequestEventsIterator method}|hyperpage}{13}
+\indexentry{make\_request() (client.events.ClientRequestEventsIterator method)@\spxentry{make\_request()}\spxextra{client.events.ClientRequestEventsIterator method}|hyperpage}{13}
+\indexentry{next() (client.events.ClientRequestEventsIterator method)@\spxentry{next()}\spxextra{client.events.ClientRequestEventsIterator method}|hyperpage}{13}
+\indexentry{set\_initial\_request() (client.events.ClientRequestEventsIterator method)@\spxentry{set\_initial\_request()}\spxextra{client.events.ClientRequestEventsIterator method}|hyperpage}{13}
+\indexentry{module@\spxentry{module}!client.state@\spxentry{client.state}|hyperpage}{13}
+\indexentry{client.state@\spxentry{client.state}!module@\spxentry{module}|hyperpage}{13}
+\indexentry{ClientGameRoundState (class in client.state)@\spxentry{ClientGameRoundState}\spxextra{class in client.state}|hyperpage}{13}
+\indexentry{\_coordinator\_id (client.state.ClientGameRoundState attribute)@\spxentry{\_coordinator\_id}\spxextra{client.state.ClientGameRoundState attribute}|hyperpage}{13}
+\indexentry{\_round\_id (client.state.ClientGameRoundState attribute)@\spxentry{\_round\_id}\spxextra{client.state.ClientGameRoundState attribute}|hyperpage}{13}
+\indexentry{\_card (client.state.ClientGameRoundState attribute)@\spxentry{\_card}\spxextra{client.state.ClientGameRoundState attribute}|hyperpage}{14}
+\indexentry{\_card\_image (client.state.ClientGameRoundState attribute)@\spxentry{\_card\_image}\spxextra{client.state.ClientGameRoundState attribute}|hyperpage}{14}
+\indexentry{\_turn\_order (client.state.ClientGameRoundState attribute)@\spxentry{\_turn\_order}\spxextra{client.state.ClientGameRoundState attribute}|hyperpage}{14}
+\indexentry{\_moves\_history (client.state.ClientGameRoundState attribute)@\spxentry{\_moves\_history}\spxextra{client.state.ClientGameRoundState attribute}|hyperpage}{14}
+\indexentry{\_available\_actions (client.state.ClientGameRoundState attribute)@\spxentry{\_available\_actions}\spxextra{client.state.ClientGameRoundState attribute}|hyperpage}{14}
+\indexentry{\_outcome (client.state.ClientGameRoundState attribute)@\spxentry{\_outcome}\spxextra{client.state.ClientGameRoundState attribute}|hyperpage}{14}
+\indexentry{\_cards (client.state.ClientGameRoundState attribute)@\spxentry{\_cards}\spxextra{client.state.ClientGameRoundState attribute}|hyperpage}{14}
+\indexentry{add\_move\_history() (client.state.ClientGameRoundState method)@\spxentry{add\_move\_history()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{14}
+\indexentry{get\_available\_actions() (client.state.ClientGameRoundState method)@\spxentry{get\_available\_actions()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{14}
+\indexentry{get\_card() (client.state.ClientGameRoundState method)@\spxentry{get\_card()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{14}
+\indexentry{get\_card\_image() (client.state.ClientGameRoundState method)@\spxentry{get\_card\_image()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{14}
+\indexentry{get\_cards() (client.state.ClientGameRoundState method)@\spxentry{get\_cards()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{14}
+\indexentry{get\_coordinator\_id() (client.state.ClientGameRoundState method)@\spxentry{get\_coordinator\_id()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{14}
+\indexentry{get\_moves\_history() (client.state.ClientGameRoundState method)@\spxentry{get\_moves\_history()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{14}
+\indexentry{get\_outcome() (client.state.ClientGameRoundState method)@\spxentry{get\_outcome()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{14}
+\indexentry{get\_round\_id() (client.state.ClientGameRoundState method)@\spxentry{get\_round\_id()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{14}
+\indexentry{get\_turn\_order() (client.state.ClientGameRoundState method)@\spxentry{get\_turn\_order()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{15}
+\indexentry{is\_ended() (client.state.ClientGameRoundState method)@\spxentry{is\_ended()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{15}
+\indexentry{set\_available\_actions() (client.state.ClientGameRoundState method)@\spxentry{set\_available\_actions()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{15}
+\indexentry{set\_card() (client.state.ClientGameRoundState method)@\spxentry{set\_card()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{15}
+\indexentry{set\_card\_image() (client.state.ClientGameRoundState method)@\spxentry{set\_card\_image()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{15}
+\indexentry{set\_cards() (client.state.ClientGameRoundState method)@\spxentry{set\_cards()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{15}
+\indexentry{set\_moves\_history() (client.state.ClientGameRoundState method)@\spxentry{set\_moves\_history()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{15}
+\indexentry{set\_outcome() (client.state.ClientGameRoundState method)@\spxentry{set\_outcome()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{15}
+\indexentry{set\_turn\_order() (client.state.ClientGameRoundState method)@\spxentry{set\_turn\_order()}\spxextra{client.state.ClientGameRoundState method}|hyperpage}{15}
+\indexentry{ClientGameState (class in client.state)@\spxentry{ClientGameState}\spxextra{class in client.state}|hyperpage}{15}
+\indexentry{\_coordinator\_id (client.state.ClientGameState attribute)@\spxentry{\_coordinator\_id}\spxextra{client.state.ClientGameState attribute}|hyperpage}{15}
+\indexentry{\_player\_token (client.state.ClientGameState attribute)@\spxentry{\_player\_token}\spxextra{client.state.ClientGameState attribute}|hyperpage}{15}
+\indexentry{\_player\_bank (client.state.ClientGameState attribute)@\spxentry{\_player\_bank}\spxextra{client.state.ClientGameState attribute}|hyperpage}{15}
+\indexentry{\_rounds (client.state.ClientGameState attribute)@\spxentry{\_rounds}\spxextra{client.state.ClientGameState attribute}|hyperpage}{15}
+\indexentry{get\_coordinator\_id() (client.state.ClientGameState method)@\spxentry{get\_coordinator\_id()}\spxextra{client.state.ClientGameState method}|hyperpage}{15}
+\indexentry{get\_last\_round\_state() (client.state.ClientGameState method)@\spxentry{get\_last\_round\_state()}\spxextra{client.state.ClientGameState method}|hyperpage}{15}
+\indexentry{get\_player\_bank() (client.state.ClientGameState method)@\spxentry{get\_player\_bank()}\spxextra{client.state.ClientGameState method}|hyperpage}{15}
+\indexentry{get\_player\_token() (client.state.ClientGameState method)@\spxentry{get\_player\_token()}\spxextra{client.state.ClientGameState method}|hyperpage}{15}
+\indexentry{get\_rounds() (client.state.ClientGameState method)@\spxentry{get\_rounds()}\spxextra{client.state.ClientGameState method}|hyperpage}{15}
+\indexentry{start\_new\_round() (client.state.ClientGameState method)@\spxentry{start\_new\_round()}\spxextra{client.state.ClientGameState method}|hyperpage}{15}
+\indexentry{update\_bank() (client.state.ClientGameState method)@\spxentry{update\_bank()}\spxextra{client.state.ClientGameState method}|hyperpage}{15}
+\indexentry{module@\spxentry{module}!client@\spxentry{client}|hyperpage}{16}
+\indexentry{client@\spxentry{client}!module@\spxentry{module}|hyperpage}{16}

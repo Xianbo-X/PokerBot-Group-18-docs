@@ -1,0 +1,7 @@
+agent\_strategy module
+======================
+
+.. automodule:: agent_strategy
+   :members:
+   :undoc-members:
+   :show-inheritance:

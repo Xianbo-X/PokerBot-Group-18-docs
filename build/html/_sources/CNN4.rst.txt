@@ -1,0 +1,7 @@
+CNN4 module
+===========
+
+.. automodule:: CNN4
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>agent_strategy module &mdash; Kuhn PokerBot Group 18 v1.2.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Kuhn PokerBot Group 18
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">agent_strategy module</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Kuhn PokerBot Group 18</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>agent_strategy module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/agent_strategy.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-agent_strategy">
+<span id="agent-strategy-module"></span><h1>agent_strategy module<a class="headerlink" href="#module-agent_strategy" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="agent_strategy.PokerStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">agent_strategy.</span></span><span class="sig-name descname"><span class="pre">PokerStrategy</span></span><a class="headerlink" href="#agent_strategy.PokerStrategy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#agent_strategy.StrategyBase" title="agent_strategy.StrategyBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">agent_strategy.StrategyBase</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.PokerStrategy.card3strategy">
+<span class="sig-name descname"><span class="pre">card3strategy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#agent_strategy.PokerStrategy.card3strategy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Using random seed to decide which action we would do. The probability range is the result from CFR algorithm.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The CFR result3 cards:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Player1 strategy:</dt><dd><p>card    history    [“CHECK”, “BET”]J       [“”]       [   0.79,  0.21]J       [“CB”]     [   1.00,  0.00]Q       [“”]       [   1.00,  0.00]Q       [“CB”]     [   0.45,  0.55]K       [“”]       [   0.39,  0.61]K       [“CB”]     [   0.00,  1.00]</p>
+</dd>
+<dt>Player2 strategy:</dt><dd><p>card    history    [“CHECK”, “BET”]J       [“B”]      [   1.00,  0.00]J       [“C”]      [   0.67,  0.33]Q       [“B”]      [   0.66,  0.34]Q       [“C”]      [   1.00,  0.00]K       [“B”]      [   0.00,  1.00]K       [“C”]      [   0.00,  1.00]</p>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.PokerStrategy.card4strategy">
+<span class="sig-name descname"><span class="pre">card4strategy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#agent_strategy.PokerStrategy.card4strategy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Using random seed to decide which action we would do. The probability range is the result from CFR algorithm.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The CFR result4 cards:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Player1 strategy:</dt><dd><p>card    history    [“CHECK”, “BET”]J       [“”]       [   0.75,  0.25]J       [“CB”]     [   1.00,  0.00]Q       [“”]       [   1.00,  0.00]Q       [“CB”]     [   0.75,  0.25]K       [“”]       [   1.00,  0.00]K       [“CB”]     [   0.00,  1.00]A       [“”]       [   0.25,  0.75]A       [“CB”]     [   0.00,  1.00]</p>
+</dd>
+<dt>Player2 strategy:</dt><dd><p>card    history    [“CHECK”, “BET”]J       [“B”]      [   1.00,  0.00]J       [“C”]      [   0.51,  0.49]Q       [“B”]      [   0.79,  0.21]Q       [“C”]      [   1.00,  0.00]K       [“B”]      [   0.20,  0.80]K       [“C”]      [   0.51,  0.49]A       [“B”]      [   0.00,  1.00]A       [“C”]      [   0.00,  1.00]</p>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.PokerStrategy.get_strategy">
+<span class="sig-name descname"><span class="pre">get_strategy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#agent_strategy.PokerStrategy.get_strategy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="agent_strategy.StrategyBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">agent_strategy.</span></span><span class="sig-name descname"><span class="pre">StrategyBase</span></span><a class="headerlink" href="#agent_strategy.StrategyBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.StrategyBase.get_strategy">
+<span class="sig-name descname"><span class="pre">get_strategy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agent_strategy.StrategyBase.get_strategy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.StrategyBase.set_avaliable_actions">
+<span class="sig-name descname"><span class="pre">set_avaliable_actions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">avaliable_actions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent_strategy.StrategyBase.set_avaliable_actions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.StrategyBase.set_bank">
+<span class="sig-name descname"><span class="pre">set_bank</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent_strategy.StrategyBase.set_bank" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.StrategyBase.set_current_card">
+<span class="sig-name descname"><span class="pre">set_current_card</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current_card</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent_strategy.StrategyBase.set_current_card" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.StrategyBase.set_gametype">
+<span class="sig-name descname"><span class="pre">set_gametype</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gametype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent_strategy.StrategyBase.set_gametype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.StrategyBase.set_move_history">
+<span class="sig-name descname"><span class="pre">set_move_history</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">move_history</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent_strategy.StrategyBase.set_move_history" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.StrategyBase.set_order">
+<span class="sig-name descname"><span class="pre">set_order</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent_strategy.StrategyBase.set_order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent_strategy.StrategyBase.set_roll_the_dice">
+<span class="sig-name descname"><span class="pre">set_roll_the_dice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">RollTheDice</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent_strategy.StrategyBase.set_roll_the_dice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Xianbo XU, Yao Lu, Bairui Han, Wen-Hung Huang.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

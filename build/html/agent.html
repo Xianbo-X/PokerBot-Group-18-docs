@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>agent module &mdash; Kuhn PokerBot Group 18 v1.2.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="models package" href="models.html" />
+    <link rel="prev" title="Introduction of Kuhn poker" href="Introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Kuhn PokerBot Group 18
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction of Kuhn poker</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">agent module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategy.html">strategy package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_sets.html">data_sets module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">client package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Kuhn PokerBot Group 18</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>agent module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/agent.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="agent-module">
+<h1>agent module<a class="headerlink" href="#agent-module" title="Permalink to this headline">¶</a></h1>
+<p>For agent class, we treat image classifiers and action generators as two components of the agent. So, two member variables <cite>self.model</cite> and <cite>self.strategy</cite> are introduced to provide services for the agent.
+By designing like this, our agent class will focus on how to pass information from image classifiers to the strategy generator. And the agent is responsible for passing information between internal components image classifiers, strategy generator and external controller.
+Also, we can easily use new image classifiers and new strategy generators to replace current components without having to consider the implementation of the agent. We just make sure the two components follow interface specifications and change the loaded <cite>self.model`</cite> and <cite>self.strategy</cite>.
+Then our agent can run normally without any further changes in the agent class.</p>
+<span class="target" id="module-agent"></span><dl class="py class">
+<dt class="sig sig-object py" id="agent.PokerAgent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">agent.</span></span><span class="sig-name descname"><span class="pre">PokerAgent</span></span><a class="headerlink" href="#agent.PokerAgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="agent.PokerAgent.make_action">
+<span class="sig-name descname"><span class="pre">make_action</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.state.ClientGameState" title="client.state.ClientGameState"><span class="pre">client.state.ClientGameState</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">round</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.state.ClientGameRoundState" title="client.state.ClientGameRoundState"><span class="pre">client.state.ClientGameRoundState</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#agent.PokerAgent.make_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Next action, used to choose a new action depending on the current state of the game. This method implements your
+unique PokerBot strategy. Use the state and round arguments to decide your next best move.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state</strong> (<a class="reference internal" href="client.html#client.state.ClientGameState" title="client.state.ClientGameState"><em>ClientGameState</em></a>) – State object of the current game (a game has multiple rounds)</p></li>
+<li><p><strong>round</strong> (<a class="reference internal" href="client.html#client.state.ClientGameRoundState" title="client.state.ClientGameRoundState"><em>ClientGameRoundState</em></a>) – State object of the current round (from deal to showdown)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A string representation of the next action an agent wants to do next, should be from a list of available actions</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str in [‘BET’, ‘CALL’, ‘CHECK’, ‘FOLD’] (and in round.get_available_actions())</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent.PokerAgent.on_error">
+<span class="sig-name descname"><span class="pre">on_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent.PokerAgent.on_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods will be called in case of error either from server backend or from client itself. You can
+optionally use this function for error handling.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>error</strong> (<em>str</em>) – string representation of the error</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent.PokerAgent.on_game_end">
+<span class="sig-name descname"><span class="pre">on_game_end</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.state.ClientGameState" title="client.state.ClientGameState"><span class="pre">client.state.ClientGameState</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent.PokerAgent.on_game_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is called once after the game has ended. A game ends automatically. You can optionally use this
+method for logging purposes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state</strong> (<a class="reference internal" href="client.html#client.state.ClientGameState" title="client.state.ClientGameState"><em>ClientGameState</em></a>) – State object of the current game</p></li>
+<li><p><strong>result</strong> (<em>str in</em><em> [</em><em>'WIN'</em><em>, </em><em>'DEFEAT'</em><em>]</em>) – End result of the game</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent.PokerAgent.on_game_start">
+<span class="sig-name descname"><span class="pre">on_game_start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gametype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent.PokerAgent.on_game_start" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method will be called once at the beginning of the game when server confirms both players have connected.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent.PokerAgent.on_image">
+<span class="sig-name descname"><span class="pre">on_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent.PokerAgent.on_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is called every time when card image changes. Use this method for image recongition procedure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>image</strong> (<em>Image</em>) – Image object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent.PokerAgent.on_new_round_request">
+<span class="sig-name descname"><span class="pre">on_new_round_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.state.ClientGameState" title="client.state.ClientGameState"><span class="pre">client.state.ClientGameState</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent.PokerAgent.on_new_round_request" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is called every time before a new round is started. A new round is started automatically.
+You can optionally use this method for logging purposes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>state</strong> (<a class="reference internal" href="client.html#client.state.ClientGameState" title="client.state.ClientGameState"><em>ClientGameState</em></a>) – State object of the current game</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="agent.PokerAgent.on_round_end">
+<span class="sig-name descname"><span class="pre">on_round_end</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.state.ClientGameState" title="client.state.ClientGameState"><span class="pre">client.state.ClientGameState</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">round</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="client.html#client.state.ClientGameRoundState" title="client.state.ClientGameRoundState"><span class="pre">client.state.ClientGameRoundState</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#agent.PokerAgent.on_round_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is called every time a round has ended. A round ends automatically. You can optionally use this
+method for logging purposes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state</strong> (<a class="reference internal" href="client.html#client.state.ClientGameState" title="client.state.ClientGameState"><em>ClientGameState</em></a>) – State object of the current game</p></li>
+<li><p><strong>round</strong> (<a class="reference internal" href="client.html#client.state.ClientGameRoundState" title="client.state.ClientGameRoundState"><em>ClientGameRoundState</em></a>) – State object of the current round</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Introduction.html" class="btn btn-neutral float-left" title="Introduction of Kuhn poker" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="models.html" class="btn btn-neutral float-right" title="models package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Xianbo XU, Yao Lu, Bairui Han, Wen-Hung Huang.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

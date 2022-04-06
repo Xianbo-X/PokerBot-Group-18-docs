@@ -1,0 +1,7 @@
+FCN4 module
+===========
+
+.. automodule:: FCN4
+   :members:
+   :undoc-members:
+   :show-inheritance:

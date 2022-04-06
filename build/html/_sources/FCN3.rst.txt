@@ -1,0 +1,7 @@
+FCN3 module
+===========
+
+.. automodule:: FCN3
+   :members:
+   :undoc-members:
+   :show-inheritance:

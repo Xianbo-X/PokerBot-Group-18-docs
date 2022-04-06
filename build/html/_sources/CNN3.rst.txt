@@ -1,0 +1,7 @@
+CNN3 module
+===========
+
+.. automodule:: CNN3
+   :members:
+   :undoc-members:
+   :show-inheritance:

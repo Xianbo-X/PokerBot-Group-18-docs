@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>data_sets module &mdash; Kuhn PokerBot Group 18 v1.2.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="client package" href="client.html" />
+    <link rel="prev" title="strategy package" href="strategy.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Kuhn PokerBot Group 18
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction of Kuhn poker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="agent.html">agent module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategy.html">strategy package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">data_sets module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-handling">Data handling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">client package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Kuhn PokerBot Group 18</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>data_sets module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/data_sets.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-sets-module">
+<h1>data_sets module<a class="headerlink" href="#data-sets-module" title="Permalink to this headline">¶</a></h1>
+<section id="data-handling">
+<h2>Data handling<a class="headerlink" href="#data-handling" title="Permalink to this headline">¶</a></h2>
+<p>For data handling, we generated noisy images with different rotate angle and noise level for later training. After generated data we extracted features from the images which aimed to remove the noise as much as possible. Because our noise followed uniform distribution so most of the noise intensity was bigger than 0(the pure black) so we regarded those pixels as background.</p>
+<span class="target" id="module-data_sets"></span><dl class="py function">
+<dt class="sig sig-object py" id="data_sets.extract_features">
+<span class="sig-prename descclassname"><span class="pre">data_sets.</span></span><span class="sig-name descname"><span class="pre">extract_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img:</span> <span class="pre">&lt;module</span> <span class="pre">'PIL.Image'</span> <span class="pre">from</span> <span class="pre">'/home/xianbo/miniconda3/lib/python3.9/site-packages/PIL/Image.py'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#data_sets.extract_features" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert an image to features that serve as input to the image classifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>img</strong> (<em>Image</em>) – Image to convert to features.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>features</strong> – Extracted features in a format that can be used in the image classifier.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list/matrix/structure of int, int between zero and one</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_sets.generate_data_set">
+<span class="sig-prename descclassname"><span class="pre">data_sets.</span></span><span class="sig-name descname"><span class="pre">generate_data_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_samples</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#data_sets.generate_data_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate n_samples noisy images by using generate_noisy_image(), and store them in data_dir.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_samples</strong> (<em>int</em>) – Number of train/test examples to generate</p></li>
+<li><p><strong>data_dir</strong> (<em>str</em>) – Directory for storing images. <cite>TRAINING_IMAGE_DIR</cite>, <cite>TEST_IMAGE_DIR</cite> are predefined path for training and testing.</p></li>
+<li><p><strong>num_label</strong> (<em>int in</em><em> [</em><em>3</em><em>,</em><em>4</em><em>]</em><em>, </em><em>default: 4</em>) – Number of unique labels to generate. First ‘num_label’ lables in predefined LABELS will be used.</p></li>
+<li><p><strong>noise_level</strong> (<em>flat in range</em><em> [</em><em>0</em><em>,</em><em>1</em><em>]</em><em>, </em><em>default: 0.2</em>) – Probability with which a given pixel is randomized.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">generate_data_set</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="n">TRAINING_IMAGE_DIR</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="go">30 pictures will be saved to TRAINING_IMAGE_DIR</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_sets.generate_noisy_image">
+<span class="sig-prename descclassname"><span class="pre">data_sets.</span></span><span class="sig-name descname"><span class="pre">generate_noisy_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rank</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise_level</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#data_sets.generate_noisy_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a noisy image with a given noise corruption. This implementation mirrors how the server generates the
+images. However the exact server settings for noise_level and ROTATE_MAX_ANGLE are unknown.
+For the PokerBot assignment you won’t need to update this function, but remember to test it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rank</strong> (<em>str in</em><em> [</em><em>'J'</em><em>, </em><em>'Q'</em><em>, </em><em>'K'</em><em>]</em>) – Original card rank.</p></li>
+<li><p><strong>noise_level</strong> (<em>int between zero and one</em>) – Probability with which a given pixel is randomized.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>noisy_img</strong> – A noisy image representation of the card rank.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Image</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_sets.load_data_set">
+<span class="sig-prename descclassname"><span class="pre">data_sets.</span></span><span class="sig-name descname"><span class="pre">load_data_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_validation</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#data_sets.load_data_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prepare features for the images in data_dir and divide in a training and validation set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_dir</strong> (<em>str</em>) – Directory of images to load</p></li>
+<li><p><strong>n_validation</strong> (<em>int</em>) – Number of images that are assigned to the validation set</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>training_features</strong> (<em>list</em>) – Containing the arrays of int between 0 and 1 which are the training images features.</p></li>
+<li><p><strong>training_labels</strong> (<em>list</em>) – Containing the training labels of str which contain alphabet among’ J,Q,K,A’.</p></li>
+<li><p><strong>validation_features</strong> (<em>list</em>) – Containing the arrays of int between 0 and 1 which are the validation images features.</p></li>
+<li><p><strong>validation_labels</strong> (<em>list</em>) – Containing the validation labels of str which contain alphabet among’ J,Q,K,A’.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="strategy.html" class="btn btn-neutral float-left" title="strategy package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="client.html" class="btn btn-neutral float-right" title="client package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Xianbo XU, Yao Lu, Bairui Han, Wen-Hung Huang.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
